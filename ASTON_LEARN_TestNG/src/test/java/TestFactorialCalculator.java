@@ -12,7 +12,6 @@ public class TestFactorialCalculator {
             Assert.assertEquals(result, calculator.factorialCalculator(input));
         } else {
             assertThrows(IllegalArgumentException.class, ()->calculator.factorialCalculator(input));
-
         }
     }
 }
