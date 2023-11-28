@@ -16,7 +16,7 @@ public class TestFactorialCalculator {
             "-10,3628800"
     })
     public void testFactorialCalculator(int input, int result) {
-        if (input > 0) {
+        if (input >= 0) {
             Assertions.assertEquals(result, calculator.factorialCalculator(input));
         } else {
             Throwable exception = assertThrows(IllegalArgumentException.class, () -> calculator.factorialCalculator(-5));
